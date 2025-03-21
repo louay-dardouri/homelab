@@ -5,8 +5,8 @@ services:
     ports:
       - "53:53/tcp"
       - "53:53/udp"
-      - "80:80/tcp"
-      - "443:443/tcp"
+      - "8000:80/tcp"
+      - "8443:443/tcp"
       - "67:67/udp"
     env_file:
       - .env
@@ -20,6 +20,12 @@ services:
       # See https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
       - NET_ADMIN
     restart: unless-stopped
+    networks:
+      - homelab_network
+
+networks:
+  homelab_network:
+    external: true
 
 volumes:
   config:

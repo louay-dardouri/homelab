@@ -7,3 +7,9 @@ services:
       - ~/homelab_volumes/glance_config:/app/config
     ports:
       - 8080:8080
+    networks:
+      - homelab_network
+
+networks:
+  homelab_network:
+    external: true
