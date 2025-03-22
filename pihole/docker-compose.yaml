@@ -12,7 +12,7 @@ services:
       - .env
     environment:
       WEBPASSWORD: ${ADMIN_PASSWORD}
-      TZ: "Europe/London"
+      TZ: "Africa/Tunis"
       FTLCONF_dns_listeningMode: "all"
     volumes:
       - config:/etc/pihole
