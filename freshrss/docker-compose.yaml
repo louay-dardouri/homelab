@@ -1,0 +1,19 @@
+services:
+  freshrss:
+    image: lscr.io/linuxserver/freshrss:latest
+    container_name: freshrss
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Tunis
+    volumes:
+      - ~/homelab_volumes/freshrss/config:/config
+    ports:
+      - 8081:80
+    restart: unless-stopped
+    networks:
+      - homelab_network
+
+networks:
+  homelab_network:
+    external: true
