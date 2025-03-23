@@ -10,6 +10,7 @@ services:
       - ~/homelab_volumes/freshrss/config:/config
     ports:
       - 8081:80
+      - 8444:443
     restart: unless-stopped
     networks:
       - homelab_network
