@@ -1,0 +1,24 @@
+services:
+  speedtest-tracker:
+    image: lscr.io/linuxserver/speedtest-tracker:latest
+    restart: unless-stopped
+    container_name: speedtest-tracker
+    env_file:
+      - .env
+    ports:
+      - 8083:80
+      - 8445:443
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - APP_KEY=${APP_KEY}
+      - DB_CONNECTION=sqlite
+    volumes:
+      - ~/homelab_volumes/speedtest-tracker/config:/config
+      - ~/homelab_volumes/speedtest-tracker/config/keys:/config/keys
+    networks:
+      - homelab_network
+
+networks:
+  homelab_network:
+    external: true
