@@ -1,0 +1,93 @@
+appConfig:
+    theme: lissy
+    layout: auto
+    iconSize: medium
+    language: en
+    statusCheck: true
+    openingMethod: newtab
+pageInfo:
+    title: Homelab
+    description: Self-hosted services
+    navLinks:
+        - title: Dasharr
+          path: http://homelab.lan:3000
+        - title: Glance
+          path: http://homelab.lan:8080
+sections:
+    - name: 🖥 Infrastructure
+      icon: fas fa-server
+      items:
+          - title: Portainer
+            description: Docker management
+            url: http://homelab.lan:9000
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer.png
+          - title: Tugtainer
+            description: Container updates
+            url: http://homelab.lan:9412
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/docker.png
+          - title: PruneMate
+            description: Docker cleanup
+            url: http://homelab.lan:7676
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/docker.png
+    - name: 🎬 Media
+      icon: fas fa-photo-film
+      items:
+          - title: Jellyfin
+            description: Media server
+            url: http://homelab.lan:8096
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/jellyfin.png
+          - title: Dasharr
+            description: Arr dashboard
+            url: http://homelab.lan:3000
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/svg/dasharr.svg
+          - title: Sonarr
+            description: TV automation
+            url: http://homelab.lan:8989
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/sonarr.png
+          - title: Radarr
+            description: Movie automation
+            url: http://homelab.lan:7878
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/radarr.png
+          - title: Bazarr
+            description: Subtitle manager
+            url: http://homelab.lan:6767
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/bazarr.png
+          - title: Prowlarr
+            description: Indexers
+            url: http://homelab.lan:9696
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/prowlarr.png
+          - title: qBittorrent
+            description: Torrent client
+            url: http://homelab.lan:8088
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/qbittorrent.png
+          - title: FlareSolverr
+            description: Cloudflare proxy
+            url: http://homelab.lan:8191
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/flaresolverr.png
+    - name: 🌐 Network & Monitoring
+      icon: fas fa-network-wired
+      items:
+          - title: Pi-hole
+            description: DNS filtering
+            url: http://homelab.lan:8000/admin
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/pi-hole.png
+          - title: Syncthing
+            description: File sync
+            url: http://homelab.lan:8384
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/syncthing.png
+          - title: Speedtest Tracker
+            description: Internet monitoring
+            url: http://homelab.lan:8083
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/speedtest-tracker.png
+          - title: PortTracker
+            description: Port monitoring
+            url: http://homelab.lan:4999
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/network.png
+    - name: 🛠 Utilities
+      icon: fas fa-tools
+      items:
+          - title: FreshRSS
+            description: RSS reader
+            url: http://homelab.lan:8081
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/freshrss.png
+pages: []

@@ -1,0 +1,15 @@
+services:
+    dashy:
+        image: lissy93/dashy:latest
+        container_name: dashy
+        restart: unless-stopped
+        volumes:
+            - ./config:/app/user-data
+        ports:
+            - 8082:8080
+        networks:
+            - homelab_network
+
+networks:
+    homelab_network:
+        external: true
