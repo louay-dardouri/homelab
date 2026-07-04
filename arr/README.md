@@ -14,6 +14,7 @@ Automated media pipeline: download, organize, stream, and subtitle.
 | bazarr | `linuxserver/bazarr:latest` | 6767 | Subtitle management (depends on Sonarr + Radarr) |
 | flaresolverr | `ghcr.io/flaresolverr/flaresolverr:latest` | 8191 | Cloudflare challenge solver for indexers |
 | dasharr | `schenanigans/dasharr:latest` | 3000 | Unified *arr dashboard |
+| jellyseerr | `fallenbagel/jellyseerr:latest` | 5055 | Media request platform — browse, discover, request |
 
 ## Volumes
 
@@ -27,8 +28,9 @@ Automated media pipeline: download, organize, stream, and subtitle.
 
 ## Networking
 
-All services are on an isolated `media-stack` bridge network (default) and do
-not connect to `homelab_network`.
+All services share the `media-stack` bridge network (default). **Jellyseerr**
+also connects to `homelab_network` so users can reach the request UI from the
+main network while still talking to Sonarr/Radarr/Jellyfin on media-stack.
 
 ## Configuration
 

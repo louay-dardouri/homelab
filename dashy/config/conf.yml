@@ -64,6 +64,10 @@ sections:
             description: Cloudflare proxy
             url: http://homelab.lan:8191
             icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/flaresolverr.png
+          - title: Jellyseerr
+            description: Media requests
+            url: http://homelab.lan:5055
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/overseerr.png
     - name: 🌐 Network & Monitoring
       icon: fas fa-network-wired
       items:
