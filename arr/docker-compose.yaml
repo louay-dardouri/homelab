@@ -111,3 +111,12 @@ services:
       - LOG_LEVEL=info
       - TZ=${TZ}
     restart: unless-stopped
+
+  dasharr:
+    image: schenanigans/dasharr:latest
+    container_name: dasharr
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./config/dasharr:/app/config
+    restart: unless-stopped
