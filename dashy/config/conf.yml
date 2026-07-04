@@ -1,5 +1,5 @@
 appConfig:
-    theme: lissy
+    theme: dracula
     layout: auto
     iconSize: medium
     language: en
@@ -83,6 +83,11 @@ sections:
             description: Port monitoring
             url: http://homelab.lan:4999
             icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/network.png
+          - title: Uptime Kuma
+            description: Service availability
+            url: http://homelab.lan:3001
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/uptime-kuma.png
+
     - name: 🛠 Utilities
       icon: fas fa-tools
       items:

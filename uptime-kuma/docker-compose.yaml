@@ -1,0 +1,15 @@
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:latest
+    container_name: uptime-kuma
+    restart: unless-stopped
+    volumes:
+      - ~/homelab_volumes/uptime-kuma:/app/data
+    ports:
+      - 3001:3001
+    networks:
+      - homelab_network
+
+networks:
+  homelab_network:
+    external: true
