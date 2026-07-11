@@ -12,7 +12,7 @@ pageInfo:
         - title: Dasharr
           path: http://homelab.lan:3000
 sections:
-    - name: 🖥 Infrastructure
+    - name: Infrastructure
       icon: fas fa-server
       items:
           - title: Portainer
@@ -31,7 +31,7 @@ sections:
             description: System monitoring
             url: http://homelab.lan:19999
             icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/netdata.png
-    - name: 🎬 Media
+    - name: Media
       icon: fas fa-photo-film
       items:
           - title: Jellyfin
@@ -70,7 +70,7 @@ sections:
             description: Media requests
             url: http://homelab.lan:5055
             icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/overseerr.png
-    - name: 🌐 Network & Monitoring
+    - name: Network & Monitoring
       icon: fas fa-network-wired
       items:
           - title: Pi-hole
@@ -94,7 +94,7 @@ sections:
             url: http://homelab.lan:3001
             icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/uptime-kuma.png
 
-    - name: 🛠 Utilities
+    - name: Utilities
       icon: fas fa-tools
       items:
           - title: FreshRSS
