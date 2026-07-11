@@ -11,8 +11,6 @@ pageInfo:
     navLinks:
         - title: Dasharr
           path: http://homelab.lan:3000
-        - title: Glance
-          path: http://homelab.lan:8080
 sections:
     - name: 🖥 Infrastructure
       icon: fas fa-server
