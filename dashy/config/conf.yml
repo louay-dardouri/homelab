@@ -105,4 +105,8 @@ sections:
             description: PDF editor
             url: http://homelab.lan:8084
             icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/stirling-pdf.png
+          - title: IT-Tools
+            description: Dev utilities
+            url: http://homelab.lan:8085
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/it-tools.png
 pages: []
