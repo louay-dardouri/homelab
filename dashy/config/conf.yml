@@ -27,6 +27,10 @@ sections:
             description: Docker cleanup
             url: http://homelab.lan:7676
             icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/docker.png
+          - title: Netdata
+            description: System monitoring
+            url: http://homelab.lan:19999
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/netdata.png
     - name: 🎬 Media
       icon: fas fa-photo-film
       items:

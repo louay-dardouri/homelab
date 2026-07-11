@@ -1,0 +1,34 @@
+services:
+  netdata:
+    image: netdata/netdata:latest
+    container_name: netdata
+    hostname: homelab
+    restart: unless-stopped
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - apparmor:unconfined
+    ports:
+      - 19999:19999
+    networks:
+      - homelab_network
+    volumes:
+      - netdataconfig:/etc/netdata
+      - netdatalib:/var/lib/netdata
+      - netdatacache:/var/cache/netdata
+      - /etc/passwd:/host/etc/passwd:ro
+      - /etc/group:/host/etc/group:ro
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /etc/os-release:/host/etc/os-release:ro
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock
+
+networks:
+  homelab_network:
+    external: true
+
+volumes:
+  netdataconfig:
+  netdatalib:
+  netdatacache:
