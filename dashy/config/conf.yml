@@ -101,4 +101,8 @@ sections:
             description: RSS reader
             url: http://homelab.lan:8081
             icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/freshrss.png
+          - title: Stirling PDF
+            description: PDF editor
+            url: http://homelab.lan:8084
+            icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/stirling-pdf.png
 pages: []

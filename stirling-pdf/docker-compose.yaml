@@ -1,0 +1,17 @@
+services:
+  stirling-pdf:
+    image: stirlingtools/stirling-pdf:latest
+    container_name: stirling-pdf
+    restart: unless-stopped
+    ports:
+      - 8084:8080
+    networks:
+      - homelab_network
+    volumes:
+      - ~/homelab_volumes/stirling-pdf/trainingData:/usr/share/tessdata:ro
+      - ~/homelab_volumes/stirling-pdf/extraConfigs:/configs
+      - ~/homelab_volumes/stirling-pdf/logs:/logs
+
+networks:
+  homelab_network:
+    external: true
